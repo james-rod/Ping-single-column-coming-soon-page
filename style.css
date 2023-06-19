@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.logo-container{
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+}
+
+.launching{
+    text-align: center;
+    font-weight: 300;
+    font-size: 50px;
+    color: hsl(0, 0%, 59%);
+    margin-top: 10px;
+}
+
+.special{
+    font-weight: 700;
+    color: black;
+}
+
+.text{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.input-container{
+    position: relative;
+    text-align: center;
+    margin: 10px;
+}
+#email-address{
+    display: inline-block;
+    width: 350px;
+    padding: 14px 130px 14px 15px;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 30px;
+    outline: none;
+}
+
+#email-address .error{
+    border: 1px solid hsl(354, 100%, 66%);  
+}
+
+::placeholder{
+    color: hsl(223, 100%, 88%);
+}
+
+button{
+    display: inline-block;
+    background-color: rgb(79, 125, 243);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    padding: 15px 50px;
+    box-shadow: 0px 5px 5px rgb(194, 211, 255);
+    margin-left: 10px;
+    transition: opacity 0.3s ease;
+}
+
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#error-text {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    color: hsl(354, 100%, 66%);
+    font-size: 12px;
+    font-style: italic;
+    display: none;
+}
+
+.img-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart{
+    width: 560px;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i{
+    margin: 5px 20px;
+    padding: 10px 13px;
+    font-size: 20px;
+    border: solid rgb(242, 244, 247);
+    color: #3673dd;
+    border-radius: 50px;
+}
+
+.fa-twitter{
+    padding: 10px 10px;
+}
+
+i:hover{
+    background-color: #3673dd;
+    color: #fff;
+    cursor: pointer;
+}
+
+.copy-rights{
+    font-size: 12px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+
+    body, html {
+        min-height: 100%;
+        min-width: 100%;
+      }
+
+    main{
+        min-width: 100vh;
+    }
+
+    .logo-container{
+        display: grid;
+        justify-content: center;
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    .launching{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .text{
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .input-container{
+        display: grid;
+        justify-content: center;
+    }
+
+    button{
+        display: block;
+        margin-left: 0;
+        margin-top: 25px;
+        padding: 15px 145px;
+        text-align: center;
+    }
+
+    #error-text{
+        position: absolute;
+        left: 25%;
+        margin-bottom: 15px;
+        line-height: 0.8;
+    }
+
+    .img-container{
+        margin-top: 20%;
+        margin-bottom: 30%;
+    }
+
+    .icon-container{
+        margin-top: 10px;
+    }
+
+    .chart{
+        width: 400px;
+    }
+
+    i{
+        margin: 5px 10px;
+    }
+}
