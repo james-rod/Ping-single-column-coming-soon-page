@@ -141,7 +141,10 @@ i:hover{
       }
 
     main{
-        min-width: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .logo-container{
